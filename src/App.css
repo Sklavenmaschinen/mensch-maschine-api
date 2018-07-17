@@ -1,28 +1,73 @@
-.App {
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  color: #000000;
+  background-color: #ffffff
+}
+
+header {
+  color: #000000;
+  background-color: #000000;
+  padding: 10px 0 5px 0;
+  border-bottom: 5px solid #e20123;
+}
+
+
+header h4 {
+  background-color: #e20123;
+  text-transform: uppercase;
+  line-height: 1em;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+header h4 small {
+  font-size: 0.5em;
+  margin-right: 3px;
+}
+
+hr {
+  border-width: 2px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-color: #000000;
+}
+
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.nav-bar li {
+  float: left;
+}
+
+.nav-bar li.active a {
+  color: #ffffff;
+  background-color: #e20123;
+}
+
+.nav-bar li a {
+  display: block;
+  color: #e20123;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.nav-bar li a:hover {
+  color: #ffffff;
+  background-color: #e20123;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.page-content {
+  width: 80%;
+  margin: 1em auto 5em auto;
 }

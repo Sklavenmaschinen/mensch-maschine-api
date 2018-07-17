@@ -1,0 +1,62 @@
+.jobs-filter {
+  border-bottom: 1px solid #000000;
+}
+
+.jobs-filter ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.jobs-filter ul li {
+  float: left;
+}
+
+.jobs-filter ul li a {
+  padding: 0 2em;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.jobs-filter ul li.active a {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.jobs-filter ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.job-item {
+  padding-bottom: 1em;
+  border: 1px solid grey;
+}
+
+.job-item h5 {
+  margin-bottom: 3px;
+}
+.job-item h5 a {
+  color: #000000;
+}
+.job-item h5 a:hover {
+  color: #6a69a0;
+}
+
+.job-item .job-description {
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0 0 5px 0;
+}
+
+.job-item i {
+  margin-left: 3px;
+}
+
+.job-item i.succeeded {
+  color: green;
+}
+
+.job-item i.failed {
+  color: red;
+}
