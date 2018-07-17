@@ -25,7 +25,7 @@ export default class Jobs extends Component {
 
           <div className="row job-item">
             <div className="col s12">
-              <h5><Link to="/jobs/123">Lorem ipsum dolor sit amet</Link></h5>
+              <h5><Link to="/jobs/37cbea8c-8e38-4615-b87d-503b85df310d">Lorem ipsum dolor sit amet</Link></h5>
               <p className="job-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 
               <div className="right">

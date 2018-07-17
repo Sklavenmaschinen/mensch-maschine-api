@@ -1,8 +1,7 @@
-* {
-  font-family: 'Oswald', sans-serif;
-}
-
 body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
   color: #000000;
   background-color: #ffffff
 }
@@ -70,4 +69,16 @@ hr {
 .page-content {
   width: 80%;
   margin: 1em auto 5em auto;
+}
+
+.error-container .col {
+  background-color: rgb(226, 1, 35, 0.3);
+  border-radius: 5px;
+}
+.error-container .col p {
+  display: inline-block;
+}
+
+.error-container .col span i {
+  cursor: pointer;
 }
