@@ -80,9 +80,9 @@
 .rule.exclusive {
   background-color: rgba(150, 50, 50, 0.2);
 }
+
 .rule.exclusive:hover {
   background-color: rgba(150, 50, 50, 0.3);
-
 }
 
 

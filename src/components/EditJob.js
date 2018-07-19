@@ -2,24 +2,37 @@ import React, { Component } from 'react'
 import { Range } from 'rc-slider';
 
 import 'rc-slider/assets/index.css';
-
 import './EditJob.css';
+
 
 export default class EditJob extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      error: null,
-      id: "37cbea8c-8e38-4615-b87d-503b85df310d",
-      name: "Lorem ipsum dolor sit amet",
-      type: "scheduled",
-      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      schedulingEnabled: false,
-      cronexp: "0 0 9 ? * MON-FRI *",
-      variationRage: [0, 0],
-      prevailingRules: []
-    };
+
+    this.state = this.props.match.params.jobId === "newJob"
+      ? {
+        error: null,
+        id: this.props.jobId,
+        name: "",
+        type: "scheduled",
+        description: "",
+        schedulingEnabled: false,
+        cronexp: "",
+        variationRage: [0, 0],
+        prevailingRules: []
+      }
+      : {
+        error: null,
+        id: "37cbea8c-8e38-4615-b87d-503b85df310d",
+        name: "Lorem ipsum dolor sit amet",
+        type: "scheduled",
+        description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        schedulingEnabled: false,
+        cronexp: "0 0 9 ? * MON-FRI *",
+        variationRage: [0, 0],
+        prevailingRules: []
+      };
 
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDelete = this.handleDelete.bind(this);

@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route, Redirect, Link, withRouter } from 'react-
 
 import Overview from './components/Overview';
 import Workers from './components/Workers';
-import CreateJob from './components/CreateJob';
 import EditJob from './components/EditJob';
 import Jobs from './components/Jobs';
 
@@ -31,7 +30,6 @@ class App extends Component {
             <Switch>
               <Route path="/" exact={true} component={Overview} />
               <Route path="/workers" component={Workers} />
-              <Route path="/jobs/create" component={CreateJob} />
               <Route path="/jobs/:jobId" component={EditJob} />
               <Route path="/jobs" component={Jobs} />
               <Route render={() => <Redirect to="/" />} />

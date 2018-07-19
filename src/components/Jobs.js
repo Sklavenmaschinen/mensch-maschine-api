@@ -13,7 +13,7 @@ export default class Jobs extends Component {
             <ul>
               <li className="active"><a className="btn-flat">All Jobs</a></li>
               <li className="right">
-                <Link to="/jobs/create" className="btn-flat">
+                <Link to="/jobs/newJob" className="btn-flat">
                   <i className="tiny material-icons left">add</i>
                   New job
                 </Link>
