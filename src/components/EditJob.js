@@ -134,7 +134,6 @@ export default class EditJob extends Component {
             </div>
 
 
-
             <div className="divider"></div>
             <h6 className="section-title">Scheduling</h6>
             <div className="row">

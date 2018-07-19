@@ -8,6 +8,7 @@ export default class Jobs extends Component {
   render() {
     return (
       <div>
+
         <div className="row">
           <div className="col s12 jobs-filter">
             <ul>
@@ -21,7 +22,8 @@ export default class Jobs extends Component {
             </ul>
           </div>
         </div>
-        <div className="jobs-list">
+
+        <div>
 
           <div className="row job-item">
             <div className="col s12">
@@ -75,9 +77,11 @@ export default class Jobs extends Component {
                 <div><small>Never</small></div>
               </div>
             </div>
+
           </div>
+
         </div>
-      </div >
+      </div>
     )
   }
 }

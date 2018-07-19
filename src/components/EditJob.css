@@ -122,11 +122,9 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-
 .action-buttons {
   margin-top: 5em;
 }
-
 
 .execution-history-container {
   overflow-y: scroll;
